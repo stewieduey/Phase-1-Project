@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (Array.isArray(heroes.powers)) {
                         // Display the powers of the clicked hero
                         heroPowers.textContent = `Powers: ${hero.powers.join(' ')}`;
-                   //back ticks to interlope the powers of te click hero
+                   //back ticks to interlope the powers of the click hero
                     } else {
                         // Handle the case if powers are not in an array
                         heroPowers.textContent = "Powers not available for this hero.";
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let heroesData = []; // Store the heroes data here
 
 
-    // Fetch data from the JSON file or API (replace with your server URL)
+    // 
     fetch('http://localhost:3000/heroes')
         .then(response => response.json())
         .then(heroes => {
@@ -123,51 +123,51 @@ document.addEventListener('DOMContentLoaded', function() {
         heroesList.append(...heroElements);
     }
 });
-//giving the user the option to delete a hero of choice.
-document.addEventListener('DOMContentLoaded', function() {
-    const heroesList = document.getElementById('heroesList');
+// //giving the user the option to delete a hero of choice.
+// //document.addEventListener('DOMContentLoaded', function() {
+//   //  const heroesList = document.getElementById('heroesList');
 
-    // Fetch the hero data from the JSON file 
-    fetch('http://localhost:3000/heroes')
-        .then(response => response.json())
-        .then(heroes => {
-            const heroElements = heroes.map(hero => {
-                const li = document.createElement('li');
-                const img = document.createElement('img');
-                img.src = hero.image;
-                const nameParagraph = document.createElement('p');
-                nameParagraph.textContent = hero.name;
-
-
-                const deleteButton = document.createElement('button');
-                deleteButton.textContent = 'Delete';
-                deleteButton.addEventListener('click', () => {
-                    // Call a function to delete the hero
-                    deleteHero(hero);
-                    // Update the displayed list
-                    li.remove();
-                });
+//     // Fetch the hero data from the JSON file 
+//     //fetch('http://localhost:3000/heroes')
+//       //  .then(response => response.json())
+//         .then(heroes => {
+//             const heroElements = heroes.map(hero => {
+//                 const li = document.createElement('li');
+//                 const img = document.createElement('img');
+//                 img.src = hero.image;
+//                 const nameParagraph = document.createElement('p');
+//                 nameParagraph.textContent = hero.name;
 
 
-                li.appendChild(img);
-                li.appendChild(nameParagraph);
-                li.appendChild(deleteButton);
+//                 const deleteButton = document.createElement('button');
+//                 deleteButton.textContent = 'Delete';
+//                 deleteButton.addEventListener('click', () => {
+//                     // Call a function to delete the hero
+//                     deleteHero(hero);
+//                     // Update the displayed list
+//                     li.remove();
+//                 });
 
 
-                return li;
-            });
+//                 li.appendChild(img);
+//                 li.appendChild(nameParagraph);
+//                 li.appendChild(deleteButton);
 
 
-            heroesList.append(...heroElements);
-        })
-        .catch(error => {
-            console.error('Something is wrong again!!!:', error.message);
-        });
+//                 return li;
+//             });
 
 
-    // Function to delete a hero
-    function deleteHero(hero) {
+//             heroesList.append(...heroElements);
+//         })
+//         .catch(error => {
+//             console.error('Something is wrong again!!!:', error.message);
+//         });
+
+
+//     // Function to delete a hero
+//     function deleteHero(hero) {
        
-    }
-});
+//     }
+// });
 
