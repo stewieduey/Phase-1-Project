@@ -5,7 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroesList = document.getElementById('heroesList');
 
     // Fetch hero name and image from the JSON 
-    fetch('http://localhost:3000/heroes')
+    fetch('http://localhost:3000/heroes',{
+    method: 'GET',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify()
+  })
         .then(response => response.json())
         .then(heroes => {
             const heroElements = heroes.map(hero => {
@@ -38,12 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroesList = document.getElementById('heroesList');
     const heroPowers = document.getElementById('heroPowers');
     // Fetch power data from the JSON file
-    fetch('http://localhost:3000/heroes')
-        .then(response => response.json())
+    fetch('http://localhost:3000/heroes',{
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json'
+        },
+        body: JSON.stringify()
+    })  
+    .then(response => response.json())
         .then(heroes => {
             heroes.forEach(heroes => {
                 const img = document.getElementById('image');
-                //img.src = hero.image;
+                img.src = hero.image;
                 img.addEventListener('click', () => {
                     // Clear existing powers
                     heroPowers.textContent = '';
@@ -66,14 +77,19 @@ document.addEventListener('DOMContentLoaded', function() {
 //when the 'DuMark's Faves' button is clicked it will filter out all the heroes that is "fave: false"
 //only displaying those with true.
 document.addEventListener('DOMContentLoaded', function() {
-    const dumarksFaves = document.getElementById('Fave');
+    const faves = document.getElementById('Fave');
 
 
     let heroesData = []; // Store the heroes data here
 
 
     // 
-    fetch('http://localhost:3000/heroes')
+    fetch('http://localhost:3000/heroes',{
+        method: 'GET',
+        headers: {'Content-Type': 'application/json'
+        },
+        body: JSON.stringify()
+    })
         .then(response => response.json())
         .then(heroes => {
             heroesData = heroes; // Store the heroes data
@@ -84,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             // Add a click event listener to the "DuMark’s Faves" button
-            dumarksFaves.addEventListener('click', () => {
+            faves.addEventListener('click', () => {
                 // Filter heroes with a property of 'true'
                 const favoriteHeroes = heroesData.filter(hero => hero.favorite === true);
 
