@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
         .then(heroes => {
             heroes.forEach(heroes => {
-                const img = document.getElementById('image');
-                img.src = hero.image;
+                const img = document.getElementById('.image');
+                //img.src = heroes.image;
                 img.addEventListener('click', () => {
                     // Clear existing powers
                     heroPowers.textContent = '';
                     if (Array.isArray(heroes.powers)) {
                         // Display the powers of the clicked hero
-                        heroPowers.textContent = `Powers: ${hero.powers.join(' ')}`;
+                        heroPowers.textContent = `Powers: ${heroes.powers.join(' ')}`;
                    //back ticks to interlope the powers of the click hero
                     } else {
                         // Handle the case if powers are not in an array
@@ -187,3 +187,20 @@ document.addEventListener('DOMContentLoaded', function() {
 //     }
 // });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+const heroImages = document.querySelector('.heroes-image');
+const displayPowers = document.getElementById('heroesPowers');
+
+heroImages.forEach((image) => {
+    image.addEventListener('click', () =>{
+        fetch('http://localhost:3000/heroes',{
+            method: 'GET',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify()
+          })
+                .then(response => response.json())
+                .then(heroes => {
+                   
