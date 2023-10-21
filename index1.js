@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         //const heroElements = heroes.map(hero => {
           //  const li = document.createElement('li');
-            const img = document.createElement('img');
+          //  const img = document.createElement('img');
             img.src = hero.image;
             const nameParagraph = document.createElement('p');
             nameParagraph.textContent = hero.name;
