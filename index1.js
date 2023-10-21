@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
        // });
 
 
-        heroesList.append(...heroElements);
+        //heroesList.append(...heroElements);
     }
 });
 // //giving the user the option to delete a hero of choice.
