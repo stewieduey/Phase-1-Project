@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             // Initial display of heroes
-            displayHeroes(heroes);
+            //displayHeroes(heroes);
 
 
             // Add a click event listener to the "DuMark’s Faves" button
-            fave.addEventListener('click', () => {
+            //fave.addEventListener('click', () => {
                 // Filter heroes with a property of 'true'
-                const favoriteHeroes = heroesData.filter(hero => hero.favorite === true);
+              //  const favoriteHeroes = heroesData.filter(hero => hero.favorite === true);
 
 
                 // Display the filtered heroes
