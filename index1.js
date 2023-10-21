@@ -203,4 +203,18 @@ heroImages.forEach((image) => {
           })
                 .then(response => response.json())
                 .then(heroes => {
-                   
+                   //add an event listener for each image
+                   heroImages.forEach((image, index) => {
+                    image.addEventListener('click', () => {
+                        //to iterate thru the heroes to find the clicked images power and display it itn the powers Div.
+                        const hero = heroes.powers[index];
+                        displayPowers.textContent = `Powers of ${hero.name}: ${hero.powers}.`;
+                    });
+                });
+            })
+            .catch((err) => {
+                console.error('Hello, its me:', err);
+            })
+        })
+    })
+})
