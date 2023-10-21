@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             //return li;
-        });
+       // });
 
 
         heroesList.append(...heroElements);
