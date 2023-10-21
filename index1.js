@@ -106,10 +106,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                 // Display the filtered heroes
-                displayHeroes(favoriteHeroes);
-            });
-        })
-        .catch(error => {
+                //displayHeroes(favoriteHeroes);
+            //});
+        //})
+        //.catch(error => {
             console.error('I hate it here!:', error.message);
         });
 
