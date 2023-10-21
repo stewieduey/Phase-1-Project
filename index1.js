@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
       //  },
         //body: JSON.stringify()
     //})
-        .then(response => response.json())
-        .then(heroes => {
-            heroesData = heroes; // Store the heroes data
+       // .then(response => response.json())
+        //.then(heroes => {
+          //  heroesData = heroes; // Store the heroes data
 
 
             // Initial display of heroes
