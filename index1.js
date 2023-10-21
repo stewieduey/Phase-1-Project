@@ -123,16 +123,16 @@ document.addEventListener('DOMContentLoaded', function() {
         //const heroElements = heroes.map(hero => {
           //  const li = document.createElement('li');
           //  const img = document.createElement('img');
-            img.src = hero.image;
-            const nameParagraph = document.createElement('p');
-            nameParagraph.textContent = hero.name;
+           // img.src = hero.image;
+            //const nameParagraph = document.createElement('p');
+            //nameParagraph.textContent = hero.name;
 
 
-            li.appendChild(img);
-            li.appendChild(nameParagraph);
+            //li.appendChild(img);
+            //li.appendChild(nameParagraph);
 
 
-            return li;
+            //return li;
         });
 
 
