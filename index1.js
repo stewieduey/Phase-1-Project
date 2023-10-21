@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //when the 'DuMark's Faves' button is clicked it will filter out all the heroes that is "fave: false"
 //only displaying those with true.
-document.addEventListener('DOMContentLoaded', function() {
-    const faves = document.getElementById('Fave');
+//document.addEventListener('DOMContentLoaded', function() {
+  //  const fave = document.getElementById('fave');
 
 
-    let heroesData = []; // Store the heroes data here
+    //let heroesData = []; // Store the heroes data here
 
 
     // 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             // Add a click event listener to the "DuMark’s Faves" button
-            faves.addEventListener('click', () => {
+            fave.addEventListener('click', () => {
                 // Filter heroes with a property of 'true'
                 const favoriteHeroes = heroesData.filter(hero => hero.favorite === true);
 
