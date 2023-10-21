@@ -110,18 +110,18 @@ document.addEventListener('DOMContentLoaded', function() {
             //});
         //})
         //.catch(error => {
-            console.error('I hate it here!:', error.message);
-        });
+          //  console.error('I hate it here!:', error.message);
+        //});
 
 
     // Function to display heroes in the list
-    function displayHeroes(heroes) {
-        heroesList.innerHTML = ''; 
+    //function displayHeroes(heroes) {
+      //  heroesList.innerHTML = ''; 
         // Clear existing heroes
 
 
-        const heroElements = heroes.map(hero => {
-            const li = document.createElement('li');
+        //const heroElements = heroes.map(hero => {
+          //  const li = document.createElement('li');
             const img = document.createElement('img');
             img.src = hero.image;
             const nameParagraph = document.createElement('p');
