@@ -40,40 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //this should display the powers of the clicked hero image in the powers div
-document.addEventListener('DOMContentLoaded', function() {
-    const heroesList = document.getElementById('heroesList');
-    const heroPowers = document.getElementById('heroPowers');
-    // Fetch power data from the JSON file
-    fetch('http://localhost:3000/heroes',{
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json'
-        },
-        body: JSON.stringify()
-    })  
-    .then(response => response.json())
-        .then(heroes => {
-            heroes.forEach(heroes => {
-                const img = document.getElementById('.image');
-                //img.src = heroes.image;
-                img.addEventListener('click', () => {
-                    // Clear existing powers
-                    heroPowers.textContent = '';
-                    if (Array.isArray(heroes.powers)) {
-                        // Display the powers of the clicked hero
-                        heroPowers.textContent = `Powers: ${heroes.powers.join(' ')}`;
-                   //back ticks to interlope the powers of the click hero
-                    } else {
-                        // Handle the case if powers are not in an array
-                        heroPowers.textContent = "Powers not available for this hero.";
-                    }
-                });
-                heroesList.appendChild(img);
-            });
-        })
-        .catch(error => {
-            console.error('Houston, we have a problem:', error.message);
-        });
-});
+
 //when the 'DuMark's Faves' button is clicked it will filter out all the heroes that is "fave: false"
 //only displaying those with true.
 //document.addEventListener('DOMContentLoaded', function() {
@@ -188,33 +155,30 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-const heroImages = document.querySelector('.heroes-image');
-const displayPowers = document.getElementById('heroesPowers');
+document.addEventListener("DOMContentLoaded", () => {
+    const heroesList = document.getElementById('heroesList');
+    const heroPowers = document.getElementById('heroPowers');
 
-heroImages.forEach((image) => {
-    image.addEventListener('click', () =>{
-        fetch('http://localhost:3000/heroes',{
-            method: 'GET',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify()
-          })
-                .then(response => response.json())
-                .then(heroes => {
-                   //add an event listener for each image
-                   heroImages.forEach((image, index) => {
-                    image.addEventListener('click', () => {
-                        //to iterate thru the heroes to find the clicked images power and display it itn the powers Div.
-                        const hero = heroes.powers[index];
-                        displayPowers.textContent = `Powers of ${hero.name}: ${hero.powers}.`;
-                    });
+    // Fetch hero data from a JSON file 
+    fetch('http://localhost:3000/heroes')
+        .then(response => response.json())
+        .then(heroes => {
+            heroesList.innerHTML = ''; // Clear existing heroes
+
+            heroes.forEach(hero => {
+                const img = document.createElement('image');
+                img.src = hero.image;
+
+                // Add an event listener to show powers when an image is clicked
+                img.addEventListener('click', () => {
+                    heroPowers.textContent = `Powers of ${hero.name}: ${hero.powers}`;
                 });
-            })
-            .catch((err) => {
-                console.error('Hello, its me:', err);
-            })
+
+                //li.appendChild(img);
+                //heroesList.appendChild(li);
+            });
         })
-    })
-})
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
