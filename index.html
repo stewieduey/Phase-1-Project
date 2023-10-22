@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer type="text/javascript" src="index3.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <title>Phase 1 Project: DuMark's Gallery of Heroes</title>
-</head>
-
+  </head>
+  <body>
     <div class="form-container">
-    <h2>Add a Hero</h2>
-    <form id="heroForm">
-        <input type="text" id="heroName" placeholder="Hero Name" required>
-        <br>
-        <input type="text" id="heroImage" placeholder="Hero Image" required>
-        <br>
-        <input type="text" id="heroPowers" placeholder="Hero Powers" required>
-        <br>
+      <h2>Add a Hero</h2>
+      <form id="heroForm">
+        <input type="text" id="heroName" placeholder="Hero Name" required />
+        <br />
+        <input type="text" id="heroImage" placeholder="Hero Image" required />
+        <br />
+        <input type="text" id="heroPowers" placeholder="Hero Powers" required />
+        <br />
         <button type="submit">Add Hero</button>
-        <br>
+        <br />
         <button id="faves">DuMark's Faves</button>
-        <br>
-    </form>
-</div>
-<div class="heroesList">
-    <h1>The Gallery of Heroes</h1>
-    <div id="heroesList">
+        <br />
+      </form>
+    </div>
+
+    <div class="hero-container">
+      <h1>The Gallery of Heroes</h1>
+      <div id="heroesContainer">
         <!-- Existing heroes will be displayed here -->
+      </div>
     </div>
 
-    <div class="heroPowers">
-    <h2>Powers</h2>
-    <div id = "heroPowersContainer"> 
+    <div class="powers-container">
+      <h2>Powers</h2>
+      <div id="heroPowersContainer">
         <!-- Powers of the selected hero shall appear here -->
+      </div>
     </div>
-
-
-    
-</body>
+  </body>
 </html>
-
-
