@@ -18,7 +18,7 @@
       "id": 3,
       "name": "Vixen",
       "image": "https://media.tenor.com/Rjs_Tqq5gQQAAAAC/vixen-animated.gif",
-      "powers": "Vixen has the power to mimic the abilities of any animal she knows of. The ability apparently gives her intuitive understanding of the animals and what abilities they have that may be useful in the situation. She can switch between the abilities with ease in a split second.",
+      "powers": "Vixen has a totem that gives her the power to mimic the abilities of any animal she knows of. The ability apparently gives her intuitive understanding of the animals and what abilities they have that may be useful in the situation. She can switch between the abilities with ease in a split second.",
       "fave": "false"
     },
     {
@@ -36,10 +36,10 @@
       "fave": "true"
     },
     {
-      "name": "Zatara Zantana",
-      "imageLink": "https://www.bing.com/images/search?view=detailV2&ccid=vlRrldK1&id=B627C8D7804349616D2A2EF1E2DE90E1DDF98E1C&thid=OIP.vlRrldK1hwWEYb3GS3QrvAHaEK&mediaurl=https%3a%2f%2fc.tenor.com%2fPFemH4zm0uIAAAAC%2fzatanna-meltborne.gif&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.be546b95d2b587058461bdc64b742bbc%3frik%3dHI753eGQ3uLxLg%26pid%3dImgRaw%26r%3d0&exph=280&expw=498&q=zatara+zatanna+gif&simid=608012192543166781&FORM=IRPRST&ck=E17D6D873C1DB126741630D48AD9D27A&selectedIndex=11",
-      "powers": "Zantana is a magic user that can perform various feats, all that's needed is for her to say her spell or incantation backwards.",
-      "id": 6
+      "id": 6,
+      "name": "Zatara Zantanna",
+      "image": "https://static.wikia.nocookie.net/powerlisting/images/3/35/Zatanna_Snow_Globe.gif/revision/latest?cb=20190318185927",
+      "powers": "Zantanna is a magic user that can perform various feats, all that's needed is for her to say her spell or incantation backwards.",
     }
   ]
 }
