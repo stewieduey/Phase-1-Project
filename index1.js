@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => console.log("We're All In This Together!"));
-//used to make sur everything is connected correctly
+document.addEventListener("DOMContentLoaded", () => console.log("Connected!"));
 
 document.addEventListener('DOMContentLoaded', function() {
     const heroesList = document.getElementById('heroesList');
@@ -159,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const heroesList = document.getElementById('heroesList');
     const heroPowers = document.getElementById('heroPowers');
 
-    // Fetch hero data from a JSON file 
+    // Fetch hero powers data from my JSON file 
     fetch('http://localhost:3000/heroes')
         .then(response => response.json())
         .then(heroes => {
