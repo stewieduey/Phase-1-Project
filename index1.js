@@ -182,3 +182,4 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error:', error);
         });
 });
+//at this point i got rid of all the error messages but still nothing is working correctly.
