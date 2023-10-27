@@ -96,5 +96,5 @@ document.addEventListener("DOMContentLoaded", () => {
 //         heroesList.appendChild(fave);
 //     });
 // }
-// favesButton.addEventListener("click", showFaves);
+// favesButton.addEventListener("click", faves);
 
