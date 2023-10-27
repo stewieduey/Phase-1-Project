@@ -5,35 +5,35 @@
       "name": "Black Lightning",
       "image": "https://66.media.tumblr.com/8bae29a3800636e81f020e8d82075d47/tumblr_p2oh6d5Xe11wnwt0go1_540.gif",
       "powers": "Manipulates electricity to various effects, including shooting lighting bolts, exerting electromagnetism, and deflecting attacks.",
-      "fave": "false"
+      "favorite": false
     },
     {
       "id": 2,
       "name": "Green Lantern",
       "image": "https://giffiles.alphacoders.com/212/212059.gif",
       "powers": "Each Green Lantern wears a ring that grants them a variety of abilities. The ring is powered by willpower. The full extent of the ring's abilities has never been rigorously defined in the stories, but two consistent traits are that it grants the power of flight and that all its effects are accompanied by a green light.",
-      "fave": "true"
+      "favorite": true
     },
     {
       "id": 3,
       "name": "Vixen",
       "image": "https://media.tenor.com/Rjs_Tqq5gQQAAAAC/vixen-animated.gif",
       "powers": "Vixen has a totem that gives her the power to mimic the abilities of any animal she knows of. The ability apparently gives her intuitive understanding of the animals and what abilities they have that may be useful in the situation. She can switch between the abilities with ease in a split second.",
-      "fave": "false"
+      "favorite": false
     },
     {
       "id": 4,
       "name": "Martian Manhunter",
       "image": "https://i.gifer.com/Cmdv.gif",
       "powers": "One of the last surviving members of his species, the Martian Manhunter wields such powers as the ability to shape-shift, telepathy, flight, invisibility, phasing, super-strength and Martian vision. ",
-      "fave": "true"
+      "favorite": true
     },
     {
       "id": 5,
       "name": "Blue Beetle",
       "image": "https://media.tenor.com/NrpEnUbvE_YAAAAC/blue-beetle-jaime-reyes.gif",
       "powers": "Owner of the Blue Beetle Scarab grants armor that protects the wearer from lasers, bullets, knives, and even telepathy. Thanks to the design of the scarab, the owner is granted multiple superhuman powers and various weapons.",
-      "fave": "true"
+      "favorite": true
     },
     {
       "id": 6,
