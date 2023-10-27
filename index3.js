@@ -87,62 +87,55 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   
-  const showFavesButton = document.getElementById("showFavesButton");
-            
-  showFavesButton.addEventListener("click", toggleFavoriteHeroes);
-  
-  let showOnlyFavorites = false;
-  
-  function toggleFavoriteHeroes() {
-    showOnlyFavorites = !showOnlyFavorites;
-    renderHeroes();
-  }
-  
-  function renderHeroes() {
-    heroContainer.replaceChildren();
-  
-    fetch("http://localhost:3000/heroes", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((heroes) => {
-        if (showOnlyFavorites) {
-          const favoriteHeroes = heroes.filter((hero) => hero.favorite === true);
-          displayHeroes(favoriteHeroes);
-        } else {
-          displayHeroes(heroes);
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching heroes:", error.message);
-      });
-  }
-  
-  function displayHeroes(heroes) {
-    heroes.forEach((hero) => {
-      const card = document.createElement("div");
-      card.classList = "hero-card";
-      const img = document.createElement("img");
-      img.src = hero.image;
-      const name = document.createElement("p");
-      name.textContent = hero.name;
-  
-      card.appendChild(img);
-      card.appendChild(name);
-  
-      card.addEventListener("click", () => {
-        showPowers(hero);
-        console.log(hero);
-      });
-  
-      heroContainer.append(card);
-    });
-  }
-  
-  // Call renderHeroes to initially display all heroes.
+const showFavesButton = document.getElementById("showFavesButton");
+
+showFavesButton.addEventListener("click", toggleFavoriteHeroes);
+
+let showOnlyFavorites = false;
+
+function toggleFavoriteHeroes() {
+  showOnlyFavorites = !showOnlyFavorites;
   renderHeroes();
-  
-  
+}
+
+function renderHeroes() {
+  heroContainer.replaceChildren();
+
+  fetch("http://localhost:3000/heroes", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((heroes) => {
+      const filteredHeroes = showOnlyFavorites
+        ? heroes.filter((hero) => hero.favorite === true)
+        : heroes;
+
+      filteredHeroes.forEach((hero) => {
+        //Maybe I should use map?
+        const card = document.createElement("div");
+        card.classList = "hero-card";
+        const img = document.createElement("img");
+        img.src = hero.image;
+        const name = document.createElement("p");
+        name.textContent = hero.name;
+
+        card.appendChild(img);
+        card.appendChild(name);
+
+        card.addEventListener("click", () => {
+          showPowers(hero);
+          console.log(hero);
+        });
+
+        heroContainer.append(card);
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching heroes:", error.message);
+    });
+}
+renderHeroes();
+
