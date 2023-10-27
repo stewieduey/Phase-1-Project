@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroContainer = document.getElementById("heroesContainer");
   const heroPowersContainer = document.getElementById("heroPowersContainer");
   const heroForm = document.getElementById("heroForm");
-  const favesButton = document.getElementById("faves");
+  
   
   heroForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevents it from acting like it's true self adding blank data to the JSON
     console.log("Form submitted!");
   
     let newHero = {
@@ -85,4 +85,16 @@ document.addEventListener("DOMContentLoaded", () => {
         //added this to let me know if something is wrong with my code in this area
       });
   }
+
   
+// function showFaves () {
+   
+//     const favesButton = heroes.filter(heroes => hero.fave);
+//     favesButton.forEach(hero => {
+//         const faveHero = documentCreate("li");
+//         faveHero.textContent = hero.name;
+//         heroesList.appendChild(fave);
+//     });
+// }
+// favesButton.addEventListener("click", showFaves);
+
