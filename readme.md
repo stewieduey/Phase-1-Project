@@ -22,7 +22,7 @@ interface that allowed it's users to not only add a hero,
 ## Features
 - **Superhero List**: The main page displays a list of superheroes, including their names and images. Each superhero is listed as an item in the list.
 - **Display Superpowers**: Clicking on a superhero's image reveals their special powers. This information is displayed in a dedicated area on the web page.
-- **Filter Favorites**: The "DuMark's Faves" button allows users to filter the list to display only their favorite superheroes. It shows superheroes marked as "favorites" in the data.
+- **Filter Favorites**: The "DuMark's Faves" button allows users to filter the list to display only DuMark's favorite superheroes. 
 
 
 
