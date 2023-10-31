@@ -5,8 +5,7 @@ DuMark's Gallery
 ## Description:
 I wanted to create a simple one paged web application that fetches data from a JSON of my making, 
 and displays that information. With this I wanted to make an easy user friendly 
-interface that allowed it's users to not only add a hero, 
-(favorite a hero,) as well as to only display my personal favorites.
+interface that allowed it's users to not only add a hero, as well as to only display my personal favorites.
 
 
 
