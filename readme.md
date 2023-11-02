@@ -11,6 +11,7 @@ interface that allowed it's users to not only add a hero, as well as to only dis
 
 ## Table of Contents
  - Features
+ - Run the JSON 
  - Usage
  - Development
  - Issues
@@ -23,6 +24,11 @@ interface that allowed it's users to not only add a hero, as well as to only dis
 - **Display Superpowers**: Clicking on a superhero's image reveals their special powers. This information is displayed in a dedicated Powers area on the web page.
 - **Filter Favorites**: The "DuMark's Faves" button allows users to filter the list to display only DuMark's favorite superheroes, to then switch back to normal when the same button is clicked. 
 
+## Run the JSON
+- Before opening the web app, please make sure to run the JSON server. To do so please follwo these steps:
+1. Navigate to the root directory of the project in your terminal.
+2. Run the JSON server sing the following command: "json-server --watch db.json"
+3. After getting confirmation that it's running, you can now move on to open the web application.
 
 
 ## Usage
@@ -34,9 +40,9 @@ interface that allowed it's users to not only add a hero, as well as to only dis
 
 
 ## Development
-- The web app is built using HTML and JavaScript.
+- The web app is built using HTML, CSS and JavaScript.
 - It uses the Fetch API to retrieve superhero data from a JSON file that I made.
-- Event listeners are used to handle interactions like displaying superpowers and filtering DuMark's favorites.
+- Event listeners are used to handle interactions like displaying the heroes, their  superpowers and filtering DuMark's favorites.
 
 
 
