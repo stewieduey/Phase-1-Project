@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { //heroes should display once the json server is running.
   renderHeroes();
 });
 
@@ -83,11 +83,11 @@ function renderHeroes() {
     })
     .catch((error) => {
       console.error("Hello from the othersiiiiiiide!!!", error.message);
-      //added this to let me know if something is wrong with my code in this area
+      //added this to let me know if something is wrong in a fun way.
     });
 }
 
-  
+  //The display my faves toggle button event listener
   const showFavesButton = document.getElementById("showFavesButton");
   showFavesButton.addEventListener("click", toggleFavoriteHeroes);
   

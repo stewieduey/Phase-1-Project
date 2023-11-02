@@ -2,7 +2,7 @@ body,
 css {
   margin: 0;
   padding: 0;
-  background-color: rgb(50, 70, 40);
+  background-color: rgb(162, 211, 137);
   text-align: center;
 }
 
@@ -47,6 +47,9 @@ section {
 }
 
 .power-description {
-  column;
-  font-size: large;
+  font-size: 20;
+  margin: auto;
+  color: rgb(15, 15, 15);
+  font: 700 normal 2.5em 'georgia', ser;
 }
+
