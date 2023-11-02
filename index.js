@@ -32,7 +32,7 @@ function createNewHero(hero) {
     .then((response) => response.json())
     .then((data) => {
       console.log(hero);
-      renderHeros();
+      renderHeroes();
     });
 }
 
@@ -135,6 +135,6 @@ function renderHeroes() {
       });
   }
   
-  renderHeroes();
+  //renderHeroes
   
   
