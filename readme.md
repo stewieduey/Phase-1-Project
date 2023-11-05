@@ -15,6 +15,7 @@ interface that allowed it's users to not only add a hero, as well as to only dis
  - Usage
  - Development
  - Issues
+ - Gifs Used 
 
 
 
@@ -50,3 +51,10 @@ interface that allowed it's users to not only add a hero, as well as to only dis
 If you encounter any issues or have suggestions for improvements, please feel free to open an issue or contribute to the project.
 
 
+## Gifs Used
+1. https://66.media.tumblr.com/8bae29a3800636e81f020e8d82075d47/tumblr_p2oh6d5Xe11wnwt0go1_540.gif
+2. https://giffiles.alphacoders.com/212/212059.gif
+3. https://media.tenor.com/Rjs_Tqq5gQQAAAAC/vixen-animated.gif
+4. https://i.gifer.com/Cmdv.gif
+5. https://media.tenor.com/NrpEnUbvE_YAAAAC/blue-beetle-jaime-reyes.gif
+6. https://static.wikia.nocookie.net/powerlisting/images/3/35/Zatanna_Snow_Globe.gif/revision/latest?cb=20190318185927
